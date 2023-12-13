@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+    <title>Capcat Automation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+
+    </style>
+</head>
+</head>
+<body>
+
+<div class="container md-12">
+
+    <h1 class="text-center mb-4" style="background-color: black; color: white;">Capcat Automation</h1>
+    <form action="/run_script/" method="post" class="border rounded p-4">
+        
+
+        <div class="mb-3">
+            <label class="form-label">Filtering Options:</label>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="badbunny">
+                        <label class="form-check-label">Badbunny</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="tuileries">
+                        <label class="form-check-label">Tuileries</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="sardinia">
+                        <label class="form-check-label">Sardinia</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="berlin">
+                        <label class="form-check-label">Berlin</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="dolce">
+                        <label class="form-check-label">Dolce</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="humble">
+                        <label class="form-check-label">Humble</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="clear">
+                        <label class="form-check-label">Clear</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="copper">
+                        <label class="form-check-label">Copper</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="plum">
+                        <label class="form-check-label">Plum</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="urbanoid">
+                        <label class="form-check-label">Urbanoid</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="robust">
+                        <label class="form-check-label">Robust</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="salt">
+                        <label class="form-check-label">Salt</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="metal">
+                        <label class="form-check-label">Metal</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="gray">
+                        <label class="form-check-label">Gray</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="shadow">
+                        <label class="form-check-label">Shadow</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="taro">
+                        <label class="form-check-label">Taro</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="mistletoe">
+                        <label class="form-check-label">Mistletoe</label>
+                    </div>
+                
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="pine">
+                        <label class="form-check-label">Pine</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="gingerbread">
+                        <label class="form-check-label">Gingerbread</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="nature">
+                        <label class="form-check-label">Nature</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="autumn">
+                        <label class="form-check-label">Autumn</label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="western">
+                        <label class="form-check-label">Western</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="eclipse">
+                        <label class="form-check-label">Eclipse</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="fling">
+                        <label class="form-check-label">Fling</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="hope">
+                        <label class="form-check-label">Hope</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="freedom">
+                        <label class="form-check-label">Freedom</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="barbie">
+                        <label class="form-check-label">Barbie</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="oppenheimer">
+                        <label class="form-check-label">Oppenheimer</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="budapest">
+                        <label class="form-check-label">Budapest</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="dispatch">
+                        <label class="form-check-label">Dispatch</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="scent">
+                        <label class="form-check-label">Scent</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="inception">
+                        <label class="form-check-label">Inception</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="oasis">
+                        <label class="form-check-label">Oasis</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="dunkirk">
+                        <label class="form-check-label">Dunkirk</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="woodland">
+                        <label class="form-check-label">Woodland</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="maple">
+                        <label class="form-check-label">Maple</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="radiance">
+                        <label class="form-check-label">Radiance</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="hawaii">
+                        <label class="form-check-label">Hawaii</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="voyage">
+                        <label class="form-check-label">Voyage</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="maldives">
+                        <label class="form-check-label">Maldives</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="hiking">
+                        <label class="form-check-label">Hiking</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="nightfall">
+                        <label class="form-check-label">Nightfall</label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="cold">
+                        <label class="form-check-label">Cold</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="tan">
+                        <label class="form-check-label">Tan</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="umber">
+                        <label class="form-check-label">Umber</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="holiday">
+                        <label class="form-check-label">Holiday</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="snack">
+                        <label class="form-check-label">Snack</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="december">
+                        <label class="form-check-label">December</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="picnic">
+                        <label class="form-check-label">Picnic</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="dusk">
+                        <label class="form-check-label">Dusk</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="hasselblad">
+                        <label class="form-check-label">Hasselblad</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="fuji">
+                        <label class="form-check-label">Fuji</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="shade">
+                        <label class="form-check-label">Shade</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="remote">
+                        <label class="form-check-label">Remote</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="friends">
+                        <label class="form-check-label">Friends</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="miami">
+                        <label class="form-check-label">Miami</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="beverly">
+                        <label class="form-check-label">Beverly</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="princeton">
+                        <label class="form-check-label">Princeton</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="film">
+                        <label class="form-check-label">Film</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="tunnel">
+                        <label class="form-check-label">Tunnel</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="fade">
+                        <label class="form-check-label">Fade</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="garden">
+                        <label class="form-check-label">Garden</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="french">
+                        <label class="form-check-label">French</label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="bake">
+                        <label class="form-check-label">Bake</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="cuisine">
+                        <label class="form-check-label">Cuisine</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="warlock">
+                        <label class="form-check-label">Warlock</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="jazz">
+                        <label class="form-check-label">Jazz</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="brown">
+                        <label class="form-check-label">Brown</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="weird">
+                        <label class="form-check-label">Weird</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="yandere">
+                        <label class="form-check-label">Yandere</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="negative">
+                        <label class="form-check-label">Negative</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="dope">
+                        <label class="form-check-label">Dope</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="sunset">
+                        <label class="form-check-label">Sunset</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="burgundy">
+                        <label class="form-check-label">Burgundy</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="ghost">
+                        <label class="form-check-label">Ghost</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="pumpkin">
+                        <label class="form-check-label">Pumpkin</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="vaporwave">
+                        <label class="form-check-label">Vaporwave</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="sepia">
+                        <label class="form-check-label">Sepia</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="red">
+                        <label class="form-check-label">Red</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="flipped">
+                        <label class="form-check-label">Flipped</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="peach">
+                        <label class="form-check-label">Peach</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="latte">
+                        <label class="form-check-label">Latte</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="veggie">
+                        <label class="form-check-label">Veggie</label>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <label class="form-label">Number of variation:</label>
+                    <select class="form-select" name="number_of_variation" required>
+                        <option value="">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <button type="submit" class="btn btn-primary">Run Capcut</button>
+        </div>
+    </form>
+    {% if result_message %}
+    <p class="mt-4">{{ result_message }}</p>
+    {% endif %}
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+---------------------------Installation step--------------------------------
+1. Python installation required.
+2. Inside capcut-automation folder run bellow commands
+    i. python3 -m venv venv
+3. Active virtual environment
+    i. for linux: source venv/bin/activate
+    ii. for windows: go to -> venv/script folder and run 
+        i. active
+4. Now install requirements
+    i. pip install -r requirements.txt
+5. Run the project.
+    i. uvicorn main:app --reload
+6. Go to browser -> http://127.0.0.1:8000/ . You will see the Capcut automation dashboard.
+---------------------------Before running the script follow bellow step---------------------------------
+7. Update capcut login email and password in constant.py files
+8. Go to you capcut account and upload the videos you want to edit only.
+9. After completing the full edit process delete previous uploaded videos and newly created edited videos before starting another script run.
+---------------------------Run The script----------------------------------------------------
+10. go to -> ¸
+    i. select the filters you want
+    ii. select the variation you want from dropdown
+    iii. write the percentage you want to cut from the video's last.
+    iv. Now run the script. (Run Script) button.
+11. you will get the final videos in (final_downloaded_video). Also, you will get without trimed videos in (download) folder
+
+---------------------------------------------------
+
+----------------update capcut email and password---------------
+Goto constant.py file and update line number 1 & 2 for these (LOGIN_EMAIL = "your email", LOGIN_PASSWORD = "your password")
+----------------Row video upload in capcut account before capcut automation run---------------
+Before running the script upload raw video in capcut account.
+keep only file you want to edit in the capcut account called (cloud/space).
+----------------Active virtual environment and run project-------------------
+In project folder open command line. write (venv\Script\activate) and press 'Enter'. You will see a folder on left side like (venv).
+write (uvicorn main:app --reload) and press Enter. if everything is ok, you will see a line like (Application startup complete.)
+Now go to browser url (http://127.0.0.1:8000/)
+You will get a dashboard called Capcut automation.
+select (filters, number of variation) and click (Run Script) button.
+
+update crediential: constant.py file and update line number 1 & 2
+activate virtual environment: venv\Script\activate
+run server: uvicorn main:app --reload
+open dashboard: http://127.0.0.1:8000/
